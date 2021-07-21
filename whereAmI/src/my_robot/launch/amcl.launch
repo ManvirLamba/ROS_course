@@ -13,7 +13,7 @@
 
 <!-- Initial pose -->
 
-  		<param name="initial_pose_x" value="5"/>
+  		<param name="initial_pose_x" value="-7.5"/>
     	<param name="initial_pose_y" value="0"/>
 	</node>
 <!-- Move Base -->
