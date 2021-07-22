@@ -13,8 +13,20 @@
 
 <!-- Initial pose -->
 
-  		<param name="initial_pose_x" value="-7.5"/>
+  		<param name="initial_pose_x" value="-4.5"/>
     	<param name="initial_pose_y" value="0"/>
+    	<param name="initial_pose_a" value="-1.5708"/>
+<!-- filter parameters -->
+	<param name="min_particles" value="100"/>
+	<param name="max_particles" value="5000"/>
+	<param name="transform_tolerance" value="0.2"/>
+ <!-- Odom -->
+<param name="odom_alpha1" value="0.05"/>
+<param name="odom_alpha2" value="0.010"/>
+<param name="odom_alpha3" value="0.05"/>
+<param name="odom_alpha4" value="0.010"/>
+
+
 	</node>
 <!-- Move Base -->
 	<node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
